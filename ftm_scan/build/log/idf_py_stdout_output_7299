@@ -1,0 +1,342 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/build/bootloader/esp-idf/esptool_py && /Users/emanuele/.espressif/python_env/idf5.1_py3.8_env/bin/python /Users/emanuele/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/build/bootloader/bootloader.bin
+Bootloader binary size 0x5020 bytes. 0x2fe0 bytes (37%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ftm_scan.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/ftm_scan.c.obj 
+/Users/emanuele/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1-dev-3462-g045163a2ec-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DUNITY_INCLUDE_CONFIG_H -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/build/config -I/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main -I/Users/emanuele/esp/esp-idf/components/newlib/platform_include -I/Users/emanuele/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/emanuele/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/emanuele/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/Users/emanuele/esp/esp-idf/components/freertos/esp_additions/include -I/Users/emanuele/esp/esp-idf/components/esp_hw_support/include -I/Users/emanuele/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/emanuele/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/Users/emanuele/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/Users/emanuele/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/Users/emanuele/esp/esp-idf/components/heap/include -I/Users/emanuele/esp/esp-idf/components/log/include -I/Users/emanuele/esp/esp-idf/components/soc/include -I/Users/emanuele/esp/esp-idf/components/soc/esp32s3 -I/Users/emanuele/esp/esp-idf/components/soc/esp32s3/include -I/Users/emanuele/esp/esp-idf/components/hal/esp32s3/include -I/Users/emanuele/esp/esp-idf/components/hal/include -I/Users/emanuele/esp/esp-idf/components/hal/platform_port/include -I/Users/emanuele/esp/esp-idf/components/esp_rom/include -I/Users/emanuele/esp/esp-idf/components/esp_rom/include/esp32s3 -I/Users/emanuele/esp/esp-idf/components/esp_rom/esp32s3 -I/Users/emanuele/esp/esp-idf/components/esp_common/include -I/Users/emanuele/esp/esp-idf/components/esp_system/include -I/Users/emanuele/esp/esp-idf/components/esp_system/port/soc -I/Users/emanuele/esp/esp-idf/components/esp_system/port/include/private -I/Users/emanuele/esp/esp-idf/components/xtensa/include -I/Users/emanuele/esp/esp-idf/components/xtensa/esp32s3/include -I/Users/emanuele/esp/esp-idf/components/lwip/include -I/Users/emanuele/esp/esp-idf/components/lwip/include/apps -I/Users/emanuele/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/emanuele/esp/esp-idf/components/lwip/lwip/src/include -I/Users/emanuele/esp/esp-idf/components/lwip/port/include -I/Users/emanuele/esp/esp-idf/components/lwip/port/freertos/include -I/Users/emanuele/esp/esp-idf/components/lwip/port/esp32xx/include -I/Users/emanuele/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/Users/emanuele/esp/esp-idf/components/esp_ringbuf/include -I/Users/emanuele/esp/esp-idf/components/efuse/include -I/Users/emanuele/esp/esp-idf/components/efuse/esp32s3/include -I/Users/emanuele/esp/esp-idf/components/driver/include -I/Users/emanuele/esp/esp-idf/components/driver/deprecated -I/Users/emanuele/esp/esp-idf/components/driver/dac/include -I/Users/emanuele/esp/esp-idf/components/driver/gpio/include -I/Users/emanuele/esp/esp-idf/components/driver/gptimer/include -I/Users/emanuele/esp/esp-idf/components/driver/i2c/include -I/Users/emanuele/esp/esp-idf/components/driver/i2s/include -I/Users/emanuele/esp/esp-idf/components/driver/ledc/include -I/Users/emanuele/esp/esp-idf/components/driver/mcpwm/include -I/Users/emanuele/esp/esp-idf/components/driver/pcnt/include -I/Users/emanuele/esp/esp-idf/components/driver/rmt/include -I/Users/emanuele/esp/esp-idf/components/driver/sdio_slave/include -I/Users/emanuele/esp/esp-idf/components/driver/sdmmc/include -I/Users/emanuele/esp/esp-idf/components/driver/sigma_delta/include -I/Users/emanuele/esp/esp-idf/components/driver/spi/include -I/Users/emanuele/esp/esp-idf/components/driver/temperature_sensor/include -I/Users/emanuele/esp/esp-idf/components/driver/touch_sensor/include -I/Users/emanuele/esp/esp-idf/components/driver/twai/include -I/Users/emanuele/esp/esp-idf/components/driver/uart/include -I/Users/emanuele/esp/esp-idf/components/driver/usb_serial_jtag/include -I/Users/emanuele/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/Users/emanuele/esp/esp-idf/components/esp_pm/include -I/Users/emanuele/esp/esp-idf/components/mbedtls/port/include -I/Users/emanuele/esp/esp-idf/components/mbedtls/mbedtls/include -I/Users/emanuele/esp/esp-idf/components/mbedtls/mbedtls/library -I/Users/emanuele/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/Users/emanuele/esp/esp-idf/components/esp_app_format/include -I/Users/emanuele/esp/esp-idf/components/bootloader_support/include -I/Users/emanuele/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/Users/emanuele/esp/esp-idf/components/esp_partition/include -I/Users/emanuele/esp/esp-idf/components/app_update/include -I/Users/emanuele/esp/esp-idf/components/esp_mm/include -I/Users/emanuele/esp/esp-idf/components/spi_flash/include -I/Users/emanuele/esp/esp-idf/components/pthread/include -I/Users/emanuele/esp/esp-idf/components/esp_timer/include -I/Users/emanuele/esp/esp-idf/components/app_trace/include -I/Users/emanuele/esp/esp-idf/components/esp_event/include -I/Users/emanuele/esp/esp-idf/components/nvs_flash/include -I/Users/emanuele/esp/esp-idf/components/esp_phy/include -I/Users/emanuele/esp/esp-idf/components/esp_phy/esp32s3/include -I/Users/emanuele/esp/esp-idf/components/vfs/include -I/Users/emanuele/esp/esp-idf/components/esp_netif/include -I/Users/emanuele/esp/esp-idf/components/wpa_supplicant/include -I/Users/emanuele/esp/esp-idf/components/wpa_supplicant/port/include -I/Users/emanuele/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/Users/emanuele/esp/esp-idf/components/esp_wifi/include -I/Users/emanuele/esp/esp-idf/components/unity/include -I/Users/emanuele/esp/esp-idf/components/unity/unity/src -I/Users/emanuele/esp/esp-idf/components/cmock/CMock/src -I/Users/emanuele/esp/esp-idf/components/console -I/Users/emanuele/esp/esp-idf/components/http_parser -I/Users/emanuele/esp/esp-idf/components/esp-tls -I/Users/emanuele/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/Users/emanuele/esp/esp-idf/components/esp_adc/include -I/Users/emanuele/esp/esp-idf/components/esp_adc/interface -I/Users/emanuele/esp/esp-idf/components/esp_adc/esp32s3/include -I/Users/emanuele/esp/esp-idf/components/esp_adc/deprecated/include -I/Users/emanuele/esp/esp-idf/components/esp_eth/include -I/Users/emanuele/esp/esp-idf/components/esp_gdbstub/include -I/Users/emanuele/esp/esp-idf/components/esp_gdbstub/xtensa -I/Users/emanuele/esp/esp-idf/components/esp_gdbstub/esp32s3 -I/Users/emanuele/esp/esp-idf/components/esp_hid/include -I/Users/emanuele/esp/esp-idf/components/tcp_transport/include -I/Users/emanuele/esp/esp-idf/components/esp_http_client/include -I/Users/emanuele/esp/esp-idf/components/esp_http_server/include -I/Users/emanuele/esp/esp-idf/components/esp_https_ota/include -I/Users/emanuele/esp/esp-idf/components/esp_lcd/include -I/Users/emanuele/esp/esp-idf/components/esp_lcd/interface -I/Users/emanuele/esp/esp-idf/components/protobuf-c/protobuf-c -I/Users/emanuele/esp/esp-idf/components/protocomm/include/common -I/Users/emanuele/esp/esp-idf/components/protocomm/include/security -I/Users/emanuele/esp/esp-idf/components/protocomm/include/transports -I/Users/emanuele/esp/esp-idf/components/esp_local_ctrl/include -I/Users/emanuele/esp/esp-idf/components/esp_psram/include -I/Users/emanuele/esp/esp-idf/components/espcoredump/include -I/Users/emanuele/esp/esp-idf/components/espcoredump/include/port/xtensa -I/Users/emanuele/esp/esp-idf/components/wear_levelling/include -I/Users/emanuele/esp/esp-idf/components/sdmmc/include -I/Users/emanuele/esp/esp-idf/components/fatfs/diskio -I/Users/emanuele/esp/esp-idf/components/fatfs/vfs -I/Users/emanuele/esp/esp-idf/components/fatfs/src -I/Users/emanuele/esp/esp-idf/components/idf_test/include -I/Users/emanuele/esp/esp-idf/components/idf_test/include/esp32s3 -I/Users/emanuele/esp/esp-idf/components/ieee802154/include -I/Users/emanuele/esp/esp-idf/components/json/cJSON -I/Users/emanuele/esp/esp-idf/components/mqtt/esp-mqtt/include -I/Users/emanuele/esp/esp-idf/components/perfmon/include -I/Users/emanuele/esp/esp-idf/components/spiffs/include -I/Users/emanuele/esp/esp-idf/components/touch_element/include -I/Users/emanuele/esp/esp-idf/components/ulp/ulp_common/include -I/Users/emanuele/esp/esp-idf/components/ulp/ulp_common/include/esp32s3 -I/Users/emanuele/esp/esp-idf/components/usb/include -I/Users/emanuele/esp/esp-idf/components/wifi_provisioning/include -I/Users/emanuele/esp/esp-idf/examples/system/console/advanced/components/cmd_nvs -I/Users/emanuele/esp/esp-idf/examples/system/console/advanced/components/cmd_system -I/Users/emanuele/esp/esp-idf/examples/system/console/advanced/components/cmd_wifi -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan=. -fmacro-prefix-map=/Users/emanuele/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/ftm_scan.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/ftm_scan.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/ftm_scan.c.obj -c /Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c
+In file included from /Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:11:
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c: In function 'event_handler':
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:27: error: expected ')' before 'ftm_ssid'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |                           ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:88: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:410:60: note: to match this '('
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:27: error: expected ')' before 'ftm_ssid'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |                           ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:88: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:411:60: note: to match this '('
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:27: error: expected ')' before 'ftm_ssid'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |                           ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:88: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:412:60: note: to match this '('
+  412 |         else if (level==ESP_LOG_DEBUG )     { esp_log_write(ESP_LOG_DEBUG,      tag, LOG_FORMAT(D, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:1: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      | ^       ~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:1: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      | ^       ~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:27: error: expected ')' before 'ftm_ssid'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |                           ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:88: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:413:60: note: to match this '('
+  413 |         else if (level==ESP_LOG_VERBOSE )   { esp_log_write(ESP_LOG_VERBOSE,    tag, LOG_FORMAT(V, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:1: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      | ^       ~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:1: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      | ^       ~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:27: error: expected ')' before 'ftm_ssid'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |                           ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:88: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                                                        ^~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:414:60: note: to match this '('
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                            ^
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%lu' expects a matching 'long unsigned int' argument [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:265:27: error: format '%s' expects a matching 'char *' argument [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:85:9: note: in expansion of macro 'ESP_LOGI'
+   85 |         ESP_LOGI(TAG_STA, ftm_ssid);
+      |         ^~~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:59:11: warning: variable 'meanRss' set but not used [-Wunused-but-set-variable]
+   59 |     float meanRss;
+      |           ^~~~~~~
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c: In function 'wifi_perform_scan':
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:249:20: error: assignment of read-only variable 'ftm_ssid'
+  249 |           ftm_ssid = (char *)g_ap_list_buffer[i].ssid;
+      |                    ^
+At top level:
+/Users/emanuele/esp/esp-idf/examples/wifi/ftm_scan/main/ftm_scan.c:137:13: warning: 'ftm_process_report' defined but not used [-Wunused-function]
+  137 | static void ftm_process_report(void)
+      |             ^~~~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

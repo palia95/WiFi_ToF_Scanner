@@ -12,6 +12,11 @@ FTM_1_POS = (-251,-172,66)
 FTM_2_POS = (377,146,70)
 FTM_3_POS = (-226,738,89)
 FTM_4_POS = (256,628,89)
+FTM_5_POS = (-251,-172,66)
+FTM_6_POS = (377,146,70)
+FTM_7_POS = (-226,738,89)
+FTM_8_POS = (256,628,89)
+FTM_9_POS = (-251,-172,66)
 
 #RSSI LOC WiFi
 d0 = 1 #d0 distance
@@ -49,7 +54,7 @@ wifi_file = 'WiFi/wifi'+value+'.csv'
 wifi_head = ['timestamp','SSID','MAC','RSSI','RTT_EST','RTT_RAW', "DIST","POINT"]
 
 #ser = serial.Serial('/dev/tty.usbserial-01EED935',115200)
-ser_wifi = serial.Serial('/dev/tty.usbmodem21301',115200)
+ser_wifi = serial.Serial('/dev/tty.usbmodem2101',115200)
 ser_wifi.flushInput()
 
 if (path.exists(wifi_file)):
@@ -109,10 +114,21 @@ while (time.time()<=TIME_LIMIT):
             P_ToF.add_anchor('FTM_2',FTM_2_POS)
             P_ToF.add_anchor('FTM_3',FTM_3_POS)
             P_ToF.add_anchor('FTM_4',FTM_4_POS)
+            P_ToF.add_anchor('FTM_5',FTM_5_POS)
+            P_ToF.add_anchor('FTM_6',FTM_6_POS)
+            P_ToF.add_anchor('FTM_7',FTM_7_POS)
+            P_ToF.add_anchor('FTM_8',FTM_8_POS)
+            P_ToF.add_anchor('FTM_9',FTM_9_POS)
             P_RSSI.add_anchor('FTM_1',FTM_1_POS)
             P_RSSI.add_anchor('FTM_2',FTM_2_POS)
             P_RSSI.add_anchor('FTM_3',FTM_3_POS)
             P_RSSI.add_anchor('FTM_4',FTM_4_POS)
+            P_RSSI.add_anchor('FTM_5',FTM_5_POS)
+            P_RSSI.add_anchor('FTM_6',FTM_6_POS)
+            P_RSSI.add_anchor('FTM_7',FTM_7_POS)
+            P_RSSI.add_anchor('FTM_8',FTM_8_POS)
+            P_RSSI.add_anchor('FTM_9',FTM_9_POS)
+
             #Gateway
             tof,label=P_ToF.add_target()
             rssi,label=P_RSSI.add_target()
